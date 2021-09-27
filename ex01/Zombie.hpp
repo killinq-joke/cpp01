@@ -6,7 +6,7 @@
 /*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 16:34:12 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/09/21 15:00:43 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/09/27 18:00:57 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,19 @@ class Zombie
 {
 
 public:
-	Zombie(void);
+	Zombie();
 	~Zombie();
-	void	announce(void);
+	void		announce(void);
+	std::string	getName(void);
+	void		setName(std::string name);
 
-	std::string	name;
+private:
+	std::string	_name;
+
 };
 
+Zombie* newZombie( std::string name );
 Zombie*	zombieHorde(int N, std::string name);
-void randomChump(std::string name);
+void randomChump( std::string name );
 
 #endif

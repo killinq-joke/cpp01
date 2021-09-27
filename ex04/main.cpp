@@ -36,6 +36,7 @@ int	main(int ac, char **av)
 	int		i;
 	char	c;
 	std::fstream	file;
+	std::fstream	out;
 	std::string	str;
 	std::string	res = "";
 	std::ostringstream ss;
@@ -71,7 +72,11 @@ int	main(int ac, char **av)
 		file.clear();
         file.seekg(0);
 		if (!res.empty())
-			std::cout << res;
+		{
+			str = av[1];
+			out.open(str + ".replace", std::ios::out);
+			out << res;
+		}
 		file.close();
 	}
 	else
