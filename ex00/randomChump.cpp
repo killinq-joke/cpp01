@@ -6,7 +6,7 @@
 /*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 16:34:07 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/09/21 14:58:33 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/09/27 17:57:04 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void randomChump(std::string name)
 {
-	Zombie	*nzomb;
+	Zombie	nzomb(name);
 
-	nzomb = newZombie(name);
-	nzomb->announce();
-	delete nzomb;
+	nzomb.announce();
 }
