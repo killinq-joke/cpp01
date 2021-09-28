@@ -6,13 +6,13 @@
 /*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 20:21:40 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/07/11 17:56:52 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/09/28 17:39:14 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string name, Weapon& weapon) : name(name), weapon(weapon)
+HumanA::HumanA(std::string name, Weapon& weapon) : _name(name), _weapon(weapon)
 {
 }
 
@@ -21,5 +21,5 @@ HumanA::~HumanA()
 }
 
 void	HumanA::attack(void) const {
-	std::cout << this->name << " attacks with his " << this->weapon.type << std::endl;
+	std::cout << this->_name << " attacks with his " << this->_weapon.type << std::endl;
 }

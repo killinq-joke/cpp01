@@ -6,7 +6,7 @@
 /*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 20:21:43 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/07/11 17:56:00 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/09/28 17:36:09 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ public:
 	~HumanA();
 	void	attack(void) const;
 
-	std::string	const name;
-	Weapon&		weapon;
+private:
+	std::string	const _name;
+	Weapon&		_weapon;
 };
 
 #endif
