@@ -25,10 +25,11 @@ public:
 	Karen(void);
 	~Karen(void);
 	void	complain(std::string level);
-	std::map<std::string, Fnptr> map;
+	std::map<std::string, Fnptr>& getMap(void);
 
 
 private:
+	std::map<std::string, Fnptr> _map;
 	void	debug(void);
 	void	info(void);
 	void	warning(void);

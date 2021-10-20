@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztouzri <ztouzri@student.42nice.fr>        +#+  +:+       +#+        */
+/*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 19:57:39 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/07/08 20:31:13 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/10/20 17:02:06 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ public:
 	std::string const	getType(void);
 	void				setType(std::string type);
 
+private:
 	std::string	type;
 };
 

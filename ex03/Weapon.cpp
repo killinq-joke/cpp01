@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ztouzri <ztouzri@student.42nice.fr>        +#+  +:+       +#+        */
+/*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 20:08:10 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/07/08 20:24:30 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/10/20 17:06:09 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Weapon::Weapon(std::string type)
 {
-	this->type = type;
+	this->setType(type);
 }
 
 Weapon::~Weapon(void)

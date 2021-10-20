@@ -6,7 +6,7 @@
 /*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 20:21:46 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/09/28 17:35:25 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/10/20 21:05:24 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,13 @@ public:
 
 	HumanB(std::string name);
 	~HumanB();
-	void	setWeapon(Weapon weapon);
-	void	attack(void) const;
+	std::string	getName(void);
+	void		setWeapon(Weapon weapon);
+	Weapon		*getWeapon(void);
+	void		attack(void);
 
 private:
-	std::string	_name;
+	std::string	const _name;
 	Weapon		*_weapon;
 };
 
