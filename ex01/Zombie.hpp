@@ -6,7 +6,7 @@
 /*   By: ztouzri <ztouzri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 16:34:12 by ztouzri           #+#    #+#             */
-/*   Updated: 2021/09/27 18:00:57 by ztouzri          ###   ########.fr       */
+/*   Updated: 2021/10/20 15:14:26 by ztouzri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ private:
 
 };
 
-Zombie* newZombie( std::string name );
+Zombie*	newZombie( std::string name );
 Zombie*	zombieHorde(int N, std::string name);
-void randomChump( std::string name );
+void	randomChump( std::string name );
 
 #endif

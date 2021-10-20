@@ -19,7 +19,7 @@ Zombie::Zombie(std::string name)
 
 Zombie::~Zombie(void)
 {
-	std::cout << "Bruhhhhhhhhhhhh" << std::endl;
+	std::cout << this->getName() << " is dead" << std::endl;
 }
 
 std::string	Zombie::getName(void)
