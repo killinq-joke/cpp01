@@ -14,20 +14,25 @@
 
 Karen::Karen(void)
 {
-	this->map["DEBUG"] = &Karen::debug;
-	this->map["INFO"] = &Karen::info;
-	this->map["WARNING"] = &Karen::warning;
-	this->map["ERROR"] = &Karen::error;
+	this->getMap()["DEBUG"] = &Karen::debug;
+	this->getMap()["INFO"] = &Karen::info;
+	this->getMap()["WARNING"] = &Karen::warning;
+	this->getMap()["ERROR"] = &Karen::error;
 };
 
 Karen::~Karen(void)
 {
 }
 
+std::map<std::string, Fnptr>&	Karen::getMap(void)
+{
+	return (this->_map);
+}
+
 void	Karen::complain(std::string level)
 {
-	if (this->map.count(level) > 0)
-		(this->*(this->map[level]))();
+	if (this->getMap().count(level) > 0)
+		(this->*(this->getMap()[level]))();
 }
 
 void Karen::debug(void)
